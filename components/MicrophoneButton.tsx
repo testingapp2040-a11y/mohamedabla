@@ -23,20 +23,13 @@ const MicrophoneButton: React.FC<MicrophoneButtonProps> = ({ isListening, onClic
       `}
       aria-label={isListening ? "Stop listening" : "Start listening"}
     >
-      <svg
-        className={`w-8 h-8 text-white
+      <img
+        src="/microphone.png"
+        alt="Microphone"
+        className={`w-8 h-8
           ${isListening ? 'animate-bounce' : ''}
         `}
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fillRule="evenodd"
-          d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.749A5.998 5.998 0 0110 16a5.998 5.001 0 01-1-1.251V13a1 1 0 10-2 0v1.5c0 2.298 1.838 4.195 4 4.495V20a1 1 0 102 0v-1.255c2.162-.299 4-2.197 4-4.495V13a1 1 0 10-2 0v1.749z"
-          clipRule="evenodd"
-        ></path>
-      </svg>
+      />
     </button>
   );
 };
