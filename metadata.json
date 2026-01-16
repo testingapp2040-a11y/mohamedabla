@@ -1,0 +1,7 @@
+{
+  "name": "Nour's Art Journey: Mohamed Abla",
+  "description": "A conversational app guided by Nour, an Egyptian tour guide, providing insights into the life and work of artist Mohamed Abla based on a provided document, using real-time voice interaction via Gemini Live API.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
